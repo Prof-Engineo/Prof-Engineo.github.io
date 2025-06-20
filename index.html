@@ -21,13 +21,13 @@ text-decoration:underline;
 
 #minibar{border:solid 2px #097969;margin:1%;padding:1%;visibility:hidden;position:fixed;background-color:#222}
 #minibar a:hover{color:red;}
-#navbar{color:#097969;list-style-type:none;margin:0;padding:0;width:18%;position:fixed;overflow:auto;}
+#navbar{color:#097969;list-style-type:none;margin:0;padding:0;width:18%;position:fixed;overflow:auto;height:100%}
 #navbar li a {color:#097969;display:block;padding:8px;text-decoration:none;}
 #navbar li a:hover{background-color:#555;color:white;}
 #navbar #closebtn a{Text-align:right;color:#555;}
 #navbar #closebtn a:hover{background-color:#222;color:red;}
 .subnav a{color:orange !important;Text-align:right  !important;}
-.subnav {font-size:90%;border:1px solid orange;border-collapse:collapse;}
+.subnav {font-size:10pt;border:1px solid orange;border-collapse:collapse;}
 
 html, body, #content > div{height:100%;padding-bottom:20%;}
 
@@ -146,18 +146,20 @@ padding-left:7px;padding-right:7px;color:orange;
 <a  id="minibar" onclick="openNav()">Menu[+]</a>
 <ul id="navbar">
 <li id="closebtn"><a href="javascript:void(0)" onclick="closeNav()">Close[X]</a></li>
-<li id="home"><a href="javascript:void(0)" onclick="btnhome()">Home</a></li>
-<li id="cover"><a href="javascript:void(0)" onclick="btncover()">Cover Letter</a></li>
-<li id="cv"><a href="javascript:void(0)" onclick="btncv()">CV</a></li>
+<li id="home"><a href="#" onclick="btnhome()">Home</a></li>
+<li id="cover"><a href="#" onclick="btncover()">Cover Letter</a></li>
+<li id="cv"><a href="#" onclick="btncv()">CV</a></li>
 <li id="projects"><a href="javascript:void(0)" onclick="btnprojects()">Projects [-]</a></li>
-<li id="eva" class="subnav"><a href="javascript:void(0)" onclick="btneva()">Evolutionary Algorithm</a></li>
-<li id="3dcube" class="subnav"><a href="javascript:void(0)" onclick="btn3dcube()">3D Cube canvas demo</a></li>
-<li id="hotwire" class="subnav"><a href="javascript:void(0)" onclick="btnhotwire()">How to hotwire a car</a></li>
-<li id="debian" class="subnav"><a href="javascript:void(0)" onclick="btndebian()">Bare Debian install Script</a></li>
-<li id="windows" class="subnav"><a href="javascript:void(0)" onclick="btnwindows()">Windows OS CLI and debloat install script</a></li>
-<li id="wordle" class="subnav"><a href="javascript:void(0)" onclick="btnwordle()">Wordle</a></li>
-<li id="svg" class="subnav"><a href="javascript:void(0)" onclick="btnsvg()">Scalable Vector Graphics</a></li>
-<li id="blackjack" class="subnav"><a href="javascript:void(0)" onclick="btnblackjack()">Black Jack</a></li>
+<li id="htmlcssjs" class="subnav"><a href="#" onclick="btnhtmlcssjs()">HTML, CSS and JS</a></li>
+<li id="eva" class="subnav"><a href="#" onclick="btneva()">Evolutionary Algorithm</a></li>
+<li id="3dcube" class="subnav"><a href="#" onclick="btn3dcube()">3D Cube canvas demo</a></li>
+<li id="hotwire" class="subnav"><a href="#" onclick="btnhotwire()">How to hotwire a car</a></li>
+<li id="debian" class="subnav"><a href="#" onclick="btndebian()">Bare Debian install Script</a></li>
+<li id="windows" class="subnav"><a href="#" onclick="btnwindows()">Windows OS CLI and debloat install script</a></li>
+<li id="wordle" class="subnav"><a href="#" onclick="btnwordle()">Wordle</a></li>
+<li id="svg" class="subnav"><a href="#" onclick="btnsvg()">Scalable Vector Graphics</a></li>
+<li id="blackjack" class="subnav"><a href="#" onclick="btnblackjack()">Black Jack</a></li>
+<li id="upcoming" class="subnav"><a href="#" onclick="btnupcoming()">Upcoming Projects</a></li>
 </ul>
 <div id="content">
 <div id="homecontent">
@@ -242,7 +244,7 @@ padding-left:7px;padding-right:7px;color:orange;
 </div>
 <div id="covercontent">
 <h1>Cover Letter</h1>
-<h2>Dear future potential employer/coworker,</h2>
+<h2>Dear 3 Sided Cube,</h2>
 <p>My name is Louis, and I'm an aspiring Software Developer. I believe that my combination of skills, experience and employment history is very unique. I&rsquo;d be grateful for an opportunity to demonstrate my problem-solving skills and my friendly personality.</p>
 <p>You might ask yourself: <em><strong>Why change careers now? Why so many years later? </strong></em> Well... I loved teaching, and found it hard to part with the profession. I find joy in altruism, I enjoyed the challenging nature of the role. My time as a teacher has been extremely rewarding.</p>
 <p>However, it's time for a change. I desire a career that demands a cognitive challenge. A career that spans beyond the four walls of a classroom. I want to collaborate with peers and solve problems in a group setting.</p>
@@ -264,6 +266,24 @@ padding-left:7px;padding-right:7px;color:orange;
 <p>LouisRoberts93@outlook.com</p>
 <p>CompSciMrR@outlook.com</p>
 </div>
+<div id="contenthtmlcssjs">
+
+<h1>HTML, CSS and JS</h1>
+<p>This whole portfolio is written using the HTML, CSS and JS</p>
+<p>You can find the code for it at:<a href="https://github.com/Prof-Engineo/Prof-Engineo.github.io">github.com/Prof-Engineo</a></p>
+
+<p>This page contains the following coding features:</p>
+<ul>
+<li>Everything is embedded into a single HTML Page.</li>
+<li>Page navigation is handled by JS.</li>
+<li>All media is embedded using base64 encoding.</li>
+<li>Uses no external libraries or plugins.</li>
+
+</ul>
+
+
+</div>
+
 <div id="evacontent">
 <h1>Evolutionary Algorithm</h1>
 <h2>What is the task-assignment problem?</h2>
@@ -1449,6 +1469,21 @@ while True:
     input("end")
 </div>
 </div>
+<div id="contentupcoming">
+<h1>Upcoming Projects</h1>
+<p>I am currently learning in the following areas:</p>
+<ul>
+<li>PHP 8.x, XAMPP Server and MySQL</li>
+<li>Machine Learning through Python including...
+<ul>
+<li>Scikit Learn</li>
+<li>Pytorch</li>
+</ul>
+</li>
+<li>Cyber Security</li>
+</ul>
+</div>
+</div>
 <script>
 let enableCube = 0;
 btnprojects();
@@ -1510,6 +1545,14 @@ function btncv() {
   document.getElementById("cv").getElementsByTagName("a")[0].style.color = "white";
   document.getElementById("cvcontent").style.display = "";
 }
+
+function btnhtmlcssjs() {
+  resetpage()
+  document.getElementById("htmlcssjs").getElementsByTagName("a")[0].style.backgroundColor = "#097969";
+  document.getElementById("htmlcssjs").getElementsByTagName("a")[0].style.color = "white";
+  document.getElementById("contenthtmlcssjs").style.display = "";
+}
+
 
 function btnhotwire() {
   resetpage()
@@ -1574,6 +1617,13 @@ function btnblackjack() {
   document.getElementById("cdisplay").style.display = "";
   document.getElementById("pdisplay").style.display = "";
   document.getElementById("blackjackcode").style.display = "";
+}
+
+function btnupcoming() {
+  resetpage()
+  document.getElementById("upcoming").getElementsByTagName("a")[0].style.backgroundColor = "#097969";
+  document.getElementById("upcoming").getElementsByTagName("a")[0].style.color = "white";
+  document.getElementById("contentupcoming").style.display = "";
 }
 
 function btnprojects() {
